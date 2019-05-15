@@ -53,6 +53,6 @@ has more accurate results in SVM. The current dataset is not appropriate to defi
 1. trainset: train2017.tsv
 2. testset: test2017.tsv
 
-Pickle files are also part of the project. Because of that, the creation of these files can be skipped to save execution time.  
+Pickle files are also part of the project. The creation of these files can be skipped to save execution time.  
 
 Collaborators: Ioannis Charamis (https://github.com/charamis) Dimitra Mavroforaki (https://github.com/dimitramav) 
