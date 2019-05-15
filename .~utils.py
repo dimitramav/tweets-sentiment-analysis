@@ -45,12 +45,10 @@ def lemmatize(tokens):
 def save_to_pickle(filename, data):
 	with open(filename+'.pickle','wb') as handle:
 		pickle.dump(data,handle,protocol = pickle.HIGHEST_PROTOCOL)
-	#na dw ti ginetai se periptwsi sfalmatos
 
 def load_from_pickle(filename):
 	with open(filename+'.pickle','rb') as handle:
 		return pickle.load(handle)
-	#na dw ti ginetai se periptwsi sfalmatos
 
 def create_word_embeddings(tweets, model):
 	word_embeddings = []
@@ -58,7 +56,7 @@ def create_word_embeddings(tweets, model):
 		vec = numpy.array(model[tweet[0]])
 		for word in tweet[1:]:
 			vec = vec + numpy.array(model[word])
-		vec = vec / len(tweet) #na dw an len(tweet)==0 einai dynato
+		vec = vec / len(tweet)
 		word_embeddings.append(vec)
 	return word_embeddings
 
