@@ -50,4 +50,7 @@ is slower.
 has more accurate results in SVM. The current dataset is not appropriate to define which vectorizer is "better".
 * The use of enriched Doc2Vec and Word2Vec embeddings confirms the above conclusion.
 
+trainset: train2017.tsv
+testset: test2017.tsv
+Pickle files are also part of the project. Because of that, the creation of these files can be skipped to save execution time.  
 Collaborators: Ioannis Charamis (https://github.com/charamis) Dimitra Mavroforaki (https://github.com/dimitramav) 
